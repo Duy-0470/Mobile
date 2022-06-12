@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/fragment_album_hot.xml" value="0.25416666666666665" />
+        <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/fragment_chude_theloai_today.xml" value="0.25416666666666665" />
         <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/fragment_playlist.xml" value="0.25416666666666665" />
+        <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/fragment_trang_chu.xml" value="0.25416666666666665" />
         <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/activity_main.xml" value="0.15534420289855072" />
         <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/dong_banner.xml" value="0.22" />
         <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/dong_playlist.xml" value="0.25" />

@@ -5,12 +5,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ViewFlipper
+        <androidx.viewpager.widget.ViewPager
             android:background="@color/purple_500"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:id ="@+id/myViewPager">
-        </ViewFlipper>
+            android:id ="@+id/viewPager">
+        </androidx.viewpager.widget.ViewPager>
         <me.relex.circleindicator.CircleIndicator
             android:id="@+id/indicatordefault"
             android:layout_alignParentRight="true"

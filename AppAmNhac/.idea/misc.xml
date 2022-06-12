@@ -3,17 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/drawable/custom_background_banner.xml" value="0.2265" />
         <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/dong_banner.xml" value="0.25416666666666665" />
-        <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/fragment_banner.xml" value="0.25416666666666665" />
-        <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/fragment_trang_chu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/activity_main.xml" value="0.15534420289855072" />
+        <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/dong_banner.xml" value="0.22" />
+        <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/fragment_banner.xml" value="0.15534420289855072" />
+        <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/fragment_trang_chu.xml" value="0.2" />
         <entry key="..\:/Users/Admin/Desktop/Mobile/AppAmNhac/app/src/main/res/layout/fragment_tim_kiem.xml" value="0.1334853090172239" />
-        <entry key="..\:/Users/camap/OneDrive/Documents/Project/Mobile/Mobile/AppAmNhac/app/src/main/res/drawable/custom_background.xml" value="0.1" />
-        <entry key="..\:/Users/camap/OneDrive/Documents/Project/Mobile/Mobile/AppAmNhac/app/src/main/res/drawable/custom_background_banner.xml" value="0.1" />
-        <entry key="..\:/Users/camap/OneDrive/Documents/Project/Mobile/Mobile/AppAmNhac/app/src/main/res/layout/dong_banner.xml" value="0.1" />
-        <entry key="..\:/Users/camap/OneDrive/Documents/Project/Mobile/Mobile/AppAmNhac/app/src/main/res/layout/fragment_banner.xml" value="0.25" />
-        <entry key="..\:/Users/camap/OneDrive/Documents/Project/Mobile/Mobile/AppAmNhac/app/src/main/res/layout/fragment_playlist.xml" value="0.25" />
       </map>
     </option>
   </component>

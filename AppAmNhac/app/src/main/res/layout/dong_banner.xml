@@ -7,12 +7,11 @@
         android:scaleType="fitXY"
         android:id="@+id/imageviewbackgroundbanner"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
-    </ImageView>
+        android:layout_height="200dp"/>
     <View
         android:background="@drawable/custom_background_banner"
         android:layout_width="match_parent"
-        android:layout_height="200dp"></View>
+        android:layout_height="200dp"/>
     <RelativeLayout
         android:id="@+id/relative1"
         android:layout_alignBottom="@id/imageviewbackgroundbanner"
@@ -51,9 +50,7 @@
                 android:layout_marginRight="40dp"
                 android:textSize="13sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
+                android:layout_height="wrap_content"/>
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>

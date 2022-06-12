@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.example.appamnhac.Model.Quangcao;
 import com.example.appamnhac.R;
 import com.squareup.picasso.Picasso;
 

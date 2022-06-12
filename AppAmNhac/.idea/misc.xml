@@ -4,10 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/HK3/NM_UDDD/Mobile/AppAmNhac/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/activity_main.xml" value="0.15534420289855072" />
+        <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/fragment_banner.xml" value="0.15534420289855072" />
+        <entry key="..\:/Mobile/AppAmNhac/app/src/main/res/layout/fragment_trang_chu.xml" value="0.2" />
         <entry key="..\:/Users/Admin/Desktop/Mobile/AppAmNhac/app/src/main/res/layout/fragment_tim_kiem.xml" value="0.1334853090172239" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

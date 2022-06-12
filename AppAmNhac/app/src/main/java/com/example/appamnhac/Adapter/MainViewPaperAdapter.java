@@ -10,9 +10,9 @@ import java.util.ArrayList;
 
 public class MainViewPaperAdapter extends FragmentPagerAdapter {
     private ArrayList<Fragment> arrayFragment = new ArrayList<>();
-    private ArrayList<String> arraytitle = new ArrayList<>();
+    private ArrayList<String> arrayTitle = new ArrayList<>();
     public MainViewPaperAdapter(@NonNull FragmentManager fm) {
-        super(fm);
+        super(fm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
     }
 
     @NonNull
@@ -27,12 +27,12 @@ public class MainViewPaperAdapter extends FragmentPagerAdapter {
     }
     public void addFragment(Fragment fragment , String title){
         arrayFragment.add(fragment);
-        arraytitle.add(title);
+        arrayTitle.add(title);
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return arraytitle.get(position);
+        return arrayTitle.get(position);
     }
 }

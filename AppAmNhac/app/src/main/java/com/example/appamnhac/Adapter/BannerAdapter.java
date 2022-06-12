@@ -50,6 +50,8 @@ public class BannerAdapter extends PagerAdapter {
         Picasso.with(context).load(arrayListbanner.get(position).getHinhBaiHat()).into(imgsongbanner);
         txttitlesongbanner.setText(arrayListbanner.get(position).getTenBaiHat());
         txtnoidung.setText(arrayListbanner.get(position).getNoidung());
+
+        container.addView(view);
         return view;
     }
 

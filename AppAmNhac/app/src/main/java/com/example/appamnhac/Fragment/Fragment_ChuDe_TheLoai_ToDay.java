@@ -1,5 +1,6 @@
 package com.example.appamnhac.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import com.example.appamnhac.Activity.DanhsachbaihatActivity;
 import com.example.appamnhac.Model.ChuDe;
 import com.example.appamnhac.Model.TheLoai;
 import com.example.appamnhac.Model.Theloaitrongngay;
@@ -89,6 +91,15 @@ public class Fragment_ChuDe_TheLoai_ToDay extends Fragment {
                     cardView.setLayoutParams(layout);
                     cardView.addView(imageView);
                     linearLayout.addView(cardView);
+                    int finalJ = j;
+                    imageView.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent = new Intent(getActivity(), DanhsachbaihatActivity.class);
+                            intent.putExtra("idtheloai",theLoaiArrayList.get(finalJ));
+                            startActivity(intent);
+                        }
+                    });
                 }
                 horizontalScrollView.addView(linearLayout);
             }

@@ -57,11 +57,11 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
         DataIntent();
         anhxa();
         init();
-        if (quangcao != null && quangcao.getTenBaiHat().equals("")){
+        if (quangcao != null && !quangcao.getTenBaiHat().equals("")){
             setValueInView(quangcao.getTenBaiHat(), quangcao.getHinhBaiHat());
             GetDataQuangcao(quangcao.getIdQuangCao());
         }
-        if (playlist != null && playlist.getTen().equals("")){
+        if (playlist != null && !playlist.getTen().equals("")){
             setValueInView(playlist.getTen(), playlist.getHinhPlaylist());
             GetDataPlaylist(playlist.getIdPlaylist());
         }
@@ -147,6 +147,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
         if (intent != null){
             if (intent.hasExtra("banner")){
                 quangcao = (Quangcao) intent.getSerializableExtra("banner");
+
             }
             if (intent.hasExtra("itemplaylist")){
                 playlist = (Playlist) intent.getSerializableExtra("itemplaylist");

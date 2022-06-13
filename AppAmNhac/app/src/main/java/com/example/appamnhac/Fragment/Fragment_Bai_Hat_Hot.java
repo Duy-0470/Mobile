@@ -33,7 +33,7 @@ public class Fragment_Bai_Hat_Hot extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_bai_hat_thich_nhat,container,false);
-        recyclerViewbaihathot = view.findViewById(R.id.recycleerviewbaihathot);
+        recyclerViewbaihathot = view.findViewById(R.id.recyclerviewbaihathot);
         GetData();
         return view;
     }

@@ -11,6 +11,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -95,7 +96,9 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
             URL url = new URL(hinh);
             Bitmap bitmap = BitmapFactory.decodeStream(url.openConnection().getInputStream());
             BitmapDrawable bitmapDrawable = new BitmapDrawable(getResources(),bitmap);
-            collapsingToolbarLayout.setBackground(bitmapDrawable);
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                collapsingToolbarLayout.setBackground(bitmapDrawable);
+            }
         } catch (MalformedURLException e)
         {
             e.printStackTrace();

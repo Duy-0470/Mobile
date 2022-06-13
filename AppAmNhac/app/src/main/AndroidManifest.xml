@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppAmNhac">
         <activity
+            android:name=".Activity.DanhsachcacplaylistActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.DanhsachbaihatActivity"
             android:exported="false" />
         <activity

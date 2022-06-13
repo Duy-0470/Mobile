@@ -139,7 +139,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbardanhsach);
         recyclerViewdanhsachbaihat = findViewById(R.id.recyclerviewdanhsachbaihat);
         floatingActionButton = findViewById(R.id.floatingactionbutton);
-        imgdanhsachcakhuc = findViewById(R.id.imageviewdanhsachsakhuc);
+        imgdanhsachcakhuc = findViewById(R.id.imageviewdanhsachcakhuc);
     }
 
     private void DataIntent() {

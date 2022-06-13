@@ -57,7 +57,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
         DataIntent();
         anhxa();
         init();
-        if (quangcao != null && quangcao.getTenBaiHat().equals("")){
+        if (quangcao != null && !quangcao.getTenBaiHat().equals("")){
             setValueInView(quangcao.getTenBaiHat(), quangcao.getHinhBaiHat());
             GetDataQuangcao(quangcao.getIdQuangCao());
         }

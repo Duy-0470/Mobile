@@ -1,11 +1,13 @@
 package com.example.appamnhac.Fragment;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
+import com.example.appamnhac.Activity.DanhsachbaihatActivity;
 import com.example.appamnhac.Adapter.PlaylistAdapter;
 import com.example.appamnhac.Model.Playlist;
 import com.example.appamnhac.R;
@@ -55,6 +58,14 @@ public class Fragment_Playlist extends Fragment {
               playlistAdapter = new PlaylistAdapter(getActivity(), android.R.layout.simple_list_item_1,mangplaylist);
               lvplaylist.setAdapter(playlistAdapter);
               setListViewHeightBasedOnChildren(lvplaylist);
+              lvplaylist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                  @Override
+                  public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                      Intent intent = new Intent(getActivity(), DanhsachbaihatActivity.class);
+                      intent.putExtra("itemplaylist",mangplaylist.get(i));
+                      startActivity(intent);
+                  }
+              });
             }
 
             @Override

@@ -29,11 +29,6 @@
             android:id ="@+id/fragmentalbum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <fragment
-            android:name = "com.example.appamnhac.Fragment.Fragment_Bai_Hat_Hot"
-            android:id ="@+id/fragmentbaihathot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 </ScrollView>

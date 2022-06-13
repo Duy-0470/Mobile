@@ -1,7 +1,6 @@
 package com.example.appamnhac.Service;
 
 import com.example.appamnhac.Model.Album;
-import com.example.appamnhac.Model.Baihat;
 import com.example.appamnhac.Model.Playlist;
 import com.example.appamnhac.Model.Quangcao;
 import com.example.appamnhac.Model.Theloaitrongngay;
@@ -26,6 +25,7 @@ public interface Dataservice {
 
     @GET("albumhot.php")
     Call<List<Album>> GetAlbumHot();
+<<<<<<< HEAD
 
     @GET("baihatduocthich.php")
     Call<List<Baihat>> GetBaiHatHot();
@@ -39,4 +39,6 @@ public interface Dataservice {
     Call<List<Baihat>> GetDanhsachbaihattheoplaylist(@Field("idplaylist") String idplaylist);
 
 
+=======
+>>>>>>> parent of 429be35 (Xong hết 24)
 }

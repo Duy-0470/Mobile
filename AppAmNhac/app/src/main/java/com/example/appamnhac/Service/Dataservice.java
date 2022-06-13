@@ -1,6 +1,7 @@
 package com.example.appamnhac.Service;
 
 import com.example.appamnhac.Model.Album;
+import com.example.appamnhac.Model.Baihat;
 import com.example.appamnhac.Model.Playlist;
 import com.example.appamnhac.Model.Quangcao;
 import com.example.appamnhac.Model.Theloaitrongngay;
@@ -8,10 +9,7 @@ import com.example.appamnhac.Model.Theloaitrongngay;
 import java.util.List;
 
 import retrofit2.Call;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
-import retrofit2.http.POST;
 
 public interface Dataservice {
     @GET("songbanner.php")
@@ -25,20 +23,7 @@ public interface Dataservice {
 
     @GET("albumhot.php")
     Call<List<Album>> GetAlbumHot();
-<<<<<<< HEAD
 
     @GET("baihatduocthich.php")
     Call<List<Baihat>> GetBaiHatHot();
-
-    @FormUrlEncoded
-    @POST("danhsachbaihat.php")
-    Call<List<Baihat>> GetDanhsachbaihattheoquangcao(@Field("idquangcao") String idquangcao);
-
-    @FormUrlEncoded
-    @POST("danhsachbaihat.php")
-    Call<List<Baihat>> GetDanhsachbaihattheoplaylist(@Field("idplaylist") String idplaylist);
-
-
-=======
->>>>>>> parent of 429be35 (Xong hết 24)
 }

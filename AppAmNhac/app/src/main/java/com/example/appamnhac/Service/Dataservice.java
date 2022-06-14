@@ -53,4 +53,11 @@ public interface Dataservice {
     @FormUrlEncoded
     @POST("theloaitheochude.php")
     Call<List<TheLoai>> GetTheloaitheochude(@Field("idchude") String idchude);
+
+    @GET("tatcaalbum.php")
+    Call<List<Album>> GetAllAlbum();
+
+    @FormUrlEncoded
+    @POST("danhsachbaihat.php")
+    Call<List<Baihat>> GetDanhsachbaihattheoalbum(@Field("idalbum") String idalbum);
 }

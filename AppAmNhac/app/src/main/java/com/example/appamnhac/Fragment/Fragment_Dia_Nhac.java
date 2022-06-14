@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.appamnhac.R;
+import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -31,5 +32,9 @@ public class Fragment_Dia_Nhac extends Fragment {
         objectAnimator.setRepeatMode(ValueAnimator.RESTART);
         objectAnimator.setInterpolator(new LinearInterpolator());
         return view;
+    }
+
+    public void Playnhac(String hinhanh) {
+        Picasso.with(getContext()).load(hinhanh).into(circleImageView);
     }
 }

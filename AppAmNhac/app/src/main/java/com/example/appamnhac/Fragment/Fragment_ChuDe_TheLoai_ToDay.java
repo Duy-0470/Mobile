@@ -17,6 +17,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.appamnhac.Activity.DanhsachbaihatActivity;
+import com.example.appamnhac.Activity.DanhsachtatcachudeActivity;
 import com.example.appamnhac.Model.ChuDe;
 import com.example.appamnhac.Model.TheLoai;
 import com.example.appamnhac.Model.Theloaitrongngay;
@@ -41,6 +42,13 @@ public class Fragment_ChuDe_TheLoai_ToDay extends Fragment {
         view = inflater.inflate(R.layout.fragment_chude_theloai_today,container,false);
         horizontalScrollView = view.findViewById(R.id.horizontalScrollview);
         txtxemthemchudetheloai = view.findViewById(R.id.textviewxemthem);
+        txtxemthemchudetheloai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), DanhsachtatcachudeActivity.class);
+                startActivity(intent);
+            }
+        });
         GetData();
         return view;
     }

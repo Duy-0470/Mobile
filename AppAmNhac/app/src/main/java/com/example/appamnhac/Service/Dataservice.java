@@ -2,6 +2,7 @@ package com.example.appamnhac.Service;
 
 import com.example.appamnhac.Model.Album;
 import com.example.appamnhac.Model.Baihat;
+import com.example.appamnhac.Model.ChuDe;
 import com.example.appamnhac.Model.Playlist;
 import com.example.appamnhac.Model.Quangcao;
 import com.example.appamnhac.Model.Theloaitrongngay;
@@ -44,4 +45,7 @@ public interface Dataservice {
     @FormUrlEncoded
     @POST("danhsachbaihat.php")
     Call<List<Baihat>> GetDanhsachbaihattheotheloai(@Field("idtheloai") String idtheloai);
+
+    @GET("tatcachude.php")
+    Call<List<ChuDe>> GetAllChuDe();
 }

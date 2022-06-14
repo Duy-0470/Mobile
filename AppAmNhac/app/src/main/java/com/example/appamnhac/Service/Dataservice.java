@@ -5,6 +5,7 @@ import com.example.appamnhac.Model.Baihat;
 import com.example.appamnhac.Model.ChuDe;
 import com.example.appamnhac.Model.Playlist;
 import com.example.appamnhac.Model.Quangcao;
+import com.example.appamnhac.Model.TheLoai;
 import com.example.appamnhac.Model.Theloaitrongngay;
 
 import java.util.List;
@@ -48,4 +49,8 @@ public interface Dataservice {
 
     @GET("tatcachude.php")
     Call<List<ChuDe>> GetAllChuDe();
+
+    @FormUrlEncoded
+    @POST("theloaitheochude.php")
+    Call<List<TheLoai>> GetTheloaitheochude(@Field("idchude") String idchude);
 }

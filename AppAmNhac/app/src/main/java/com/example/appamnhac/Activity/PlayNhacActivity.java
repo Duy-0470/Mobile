@@ -14,6 +14,9 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.appamnhac.Adapter.ViewPagerPlaylistnhac;
+import com.example.appamnhac.Fragment.Fragment_Dia_Nhac;
+import com.example.appamnhac.Fragment.Fragment_Play_Danh_Sach_Cac_Bai_Hat;
 import com.example.appamnhac.Model.Baihat;
 import com.example.appamnhac.R;
 
@@ -26,6 +29,9 @@ public class PlayNhacActivity extends AppCompatActivity {
     ImageButton imgplay,imgrepeat,imgnext,imgpre,imgrandom;
     ViewPager viewPagerplaynhac;
     public static ArrayList<Baihat> mangbaihat = new ArrayList<>();
+    public static ViewPagerPlaylistnhac adapternhac;
+    Fragment_Dia_Nhac fragment_dia_nhac;
+    Fragment_Play_Danh_Sach_Cac_Bai_Hat fragment_play_danh_sach_cac_bai_hat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,5 +75,11 @@ public class PlayNhacActivity extends AppCompatActivity {
             }
         });
         toolbarplaynhac.setTitleTextColor(Color.WHITE);
+        fragment_dia_nhac = new Fragment_Dia_Nhac();
+        fragment_play_danh_sach_cac_bai_hat = new Fragment_Play_Danh_Sach_Cac_Bai_Hat();
+        adapternhac = new ViewPagerPlaylistnhac(getSupportFragmentManager());
+        adapternhac.AddFragment(fragment_play_danh_sach_cac_bai_hat);
+        adapternhac.AddFragment(fragment_dia_nhac);
+        viewPagerplaynhac.setAdapter(adapternhac);
     }
 }

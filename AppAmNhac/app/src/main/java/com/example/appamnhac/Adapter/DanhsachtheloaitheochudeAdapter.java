@@ -1,6 +1,7 @@
 package com.example.appamnhac.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.appamnhac.Activity.DanhsachbaihatActivity;
+import com.example.appamnhac.Activity.DanhsachtheloaitheochudeActivity;
 import com.example.appamnhac.Model.ChuDe;
 import com.example.appamnhac.Model.TheLoai;
 import com.example.appamnhac.R;
@@ -53,6 +56,14 @@ public class DanhsachtheloaitheochudeAdapter extends RecyclerView.Adapter<Danhsa
             super(itemView);
             imghinhnen = itemView.findViewById(R.id.imageviewtheloaitheochude);
             txttentheloai = itemView.findViewById(R.id.textviewtheloaitheochude);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(context, DanhsachbaihatActivity.class);
+                    intent.putExtra("idtheloai",theLoaiArrayList.get(getPosition()));
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
